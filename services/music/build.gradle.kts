@@ -30,6 +30,7 @@ android {
 
     kotlinOptions {
         jvmTarget = "1.8"
+        freeCompilerArgs = listOf("-opt-in=androidx.media3.common.util.UnstableApi")
     }
     namespace = "de.mm20.launcher2.music"
 }
@@ -37,6 +38,8 @@ android {
 dependencies {
     implementation(libs.bundles.kotlin)
     implementation(libs.androidx.core)
+    implementation(libs.androidx.media)
+    implementation(libs.androidx.media3.session)
 
     implementation(libs.koin.android)
     implementation(libs.coil.core)

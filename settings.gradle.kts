@@ -160,6 +160,13 @@ dependencyResolutionManagement {
                 )
             )
 
+            library("androidx.media", "androidx.media", "media")
+                .version("1.7.0-alpha01")
+
+            version("androidx.media3", "1.0.0-beta03")
+            library("androidx.media3.session", "androidx.media3", "media3-session")
+                .versionRef("androidx.media3")
+
             library("androidx.navigation.compose", "androidx.navigation", "navigation-compose")
                 .version("2.6.0-alpha01")
 
